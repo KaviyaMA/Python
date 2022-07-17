@@ -1,0 +1,25 @@
+ # Convert String to List
+ str1="Inceptez Technologies Pvt Ltd"
+ list1 = str1.split()
+ print(list1)
+ 
+ emplstlst= [["1", ("Arun","Kumar"), "10000"],["2", ("Bala","Mohan"), "12000"]]
+ print(tuple(emplstlst[0]))
+ print(emplstlst[1][1][::-1])
+ from functools import reduce
+ emptuptup = []
+ for i in emplstlst:
+	emptuptup.append(tuple(i))
+ print(tuple(emptuptup))
+ print(reduce(lambda x,y:x+y,map(lambda x:int(x[2]),emptuptup)))
+ 
+# using for loop to print even numbers and odd numbers  
+even_num = []
+odd_num = []
+for i to range(5,21)
+  if(i % 2 == 0):
+    even_num.append(i)
+  else:
+    odd_num.append(i)
+print(even_num)
+print(odd_num)
